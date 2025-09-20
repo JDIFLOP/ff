@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gean</title>
+</head>
+<body>
+    <div>
+        <button type="button" onclick="openInChrome()"
+            style="
+            background-color: rgb(255, 255, 90);
+            width: 370px;
+            height: 200px;
+            font-size: 100px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-weight: bolder;
+            margin-top: 100px;
+            border-style: solid;
+            border-width: 10px;
+            place-items: center;"
+            >PLAY</button>
+    </div>
+
+    <script>
+      function openInChrome() {
+        const url = "https://xp-oece.onrender.com";
+
+        const intentUrl = `intent://${url.replace('https://','')}#Intent;scheme=https;package=com.android.chrome;end`;
+
+        window.location.href = intentUrl;
+      }
+    </script>
+</body>
+</html>
